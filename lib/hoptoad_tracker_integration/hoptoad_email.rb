@@ -18,7 +18,7 @@ module HoptoadTrackerIntegration
     end
 
     def hoptoad_link
-      @raw.match(%r{(http://foraker.hoptoadapp.com/errors/\d+)})[1]
+      @raw.match(%r{(http://.+\.hoptoadapp\.com/errors/\d+)})[1]
     end
 
     def to_story_xml

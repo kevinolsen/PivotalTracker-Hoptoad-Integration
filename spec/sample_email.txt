@@ -1,0 +1,529 @@
+Return-Path: <bounces+5166-5579-rlh=foraker.com@mail.hoptoadapp.com>
+Received: from [10.16.254.1] (HELO spamfilter.boulder.foraker.com)
+  by foraker.com (CommuniGate Pro SMTP 5.2.0)
+  with ESMTP id 13207783 for rlh@foraker.com; Mon, 27 Sep 2010 18:30:28 -0400
+Return-Path: bounces+5166-5579-rlh=foraker.com@mail.hoptoadapp.com
+X-Envelope-From: bounces+5166-5579-rlh=foraker.com@mail.hoptoadapp.com
+X-Envelope-To: rlh@foraker.com
+Received: From o1.mail.hoptoadapp.com (74.63.202.82) by spamfilter.boulder.foraker.com (MAILFOUNDRY) id 1Jmp4sqGEd+7CgAw for rlh@foraker.com; Mon, 27 Sep 2010 22:30:28 -0000 (GMT)
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed; d=hoptoadapp.com; h=date
+	:from:to:message-id:subject:mime-version:content-type:sender; s=
+	smtpapi; bh=7m0+g+CQt1dBrUF84a1O08hc3Lk=; b=NkR2cBGO5XspoLIYWtI1
+	VkBVVUfThGTV5d5472Smhw/MwQohSQ4iwhr1QfeDAEn0m0B9IX9RGE5u7Z6e5hxl
+	TSYDAfz2OqmzshN32AMiANDHHQWdlOCKeQAUV64iyt9xX+VvbMcrVu3YFDWxp+li
+	3WAwpwsGt3Wdo8EUI5VIcyA=
+DomainKey-Signature: a=rsa-sha1; c=nofws; d=hoptoadapp.com; h=date:from
+	:to:message-id:subject:mime-version:content-type:sender; q=dns;
+	 s=smtpapi; b=Warki+TEeMqTpd5gKnkAS8g2V4D5iX7e8xHyhl2qzwtFN3HlEh
+	4qW+G47uzwqJAruTeNEy6DS0+pVkLYSUDcVrhla6SjpqfnMXlTZnSDC26902Prwb
+	zyEP8dvEytHLpAmIcpUczGV6g5+d+nrLKQTGmbN6nfsHQaadAG0Uw2qMM=
+Received: by 10.36.109.141 with SMTP id mf10.5493.4CA11B031
+        Mon, 27 Sep 2010 15:30:27 -0700 (PDT)
+Received: from thoughtbot.com (unknown [10.9.180.5])
+	by mi9 (SG) with ESMTPSA id D822E640D53;
+	Mon, 27 Sep 2010 17:30:26 -0500 (CDT)
+Received: from [10.252.139.193] (helo=hoptoadapp.com)
+	by thoughtbot.com with esmtpa (Exim 4.69)
+	(envelope-from <hoptoad@thoughtbot.com>)
+	id 1P0MDK-0008RI-Cz; Mon, 27 Sep 2010 15:30:26 -0700
+Date: Mon, 27 Sep 2010 15:30:26 -0700
+From: Hoptoad <donotreply@hoptoadapp.com>
+To: nre@foraker.com, pivotal-tci2@foraker.com, rlh@foraker.com
+Message-Id: <4ca11b026035b_4e53..fdb3b4f7e494c2@domU-12-31-38-00-84-33.tmail>
+Subject: [TCI] Dev qa: RuntimeError: here3
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=mimepart_4ca11b0266d76_4e53..fdb3b4f7e49527
+Sender: hoptoad@thoughtbot.com
+X-Sendgrid-EID: Oolwx+0nVjV58VgKyo2+CawK6DOhl+dUcTlfg7lJxc93m6P9yv+4TIjdbfMG0egq4l9k/bACcgFrcHirzynZw3YYRRiYfxNrmspU9NQVtOg33J9poEYSx/RW820U45Rxfs+UzGFFj0HNM5mQoyBf2g==
+
+
+--mimepart_4ca11b0266d76_4e53..fdb3b4f7e49527
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: Quoted-printable
+Content-Disposition: inline
+
+
+
+You are currently using an old version of the Hoptoad Notifier: (2.2.2)
+
+Please upgrade to the latest notifier version (2.3.7):
+
+http://github.com/thoughtbot/hoptoad_notifier
+
+
+Project: TCI
+Environment: Dev qa
+
+
+http://foraker.hoptoadapp.com/errors/2387110
+
+Error Message:
+--------------
+RuntimeError: here3
+
+Where:
+------
+student/multiple_choice_questions#check_answer_flash_scale
+[PROJECT_ROOT]/app/controllers/student/multiple_choice_questions_controller=
+.rb, line 100
+
+Backtrace Summary:
+------------------
+[PROJECT_ROOT]/app/controllers/student/multiple_choice_questions_controller=
+.rb:100:in `check_answer_flash_scale'
+[GEM_ROOT]/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `sen=
+d'
+[GEM_ROOT]/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `per=
+form_action_without_filters'
+[GEM_ROOT]/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `c=
+all_filters'
+[GEM_ROOT]/gems/actionpack-2.3.2/lib/action_controller/filters.rb:638:in `r=
+un_before_filters'
+[GEM_ROOT]/gems/actionpack-2.3.2/lib/action_controller/filters.rb:206:in `c=
+all'
+[GEM_ROOT]/gems/actionpack-2.3.2/lib/action_controller/filters.rb:206:in `a=
+round_proc'
+[GEM_ROOT]/gems/activesupport-2.3.2/lib/active_support/callbacks.rb:182:in =
+`call'
+[GEM_ROOT]/gems/activesupport-2.3.2/lib/active_support/callbacks.rb:182:in =
+`evaluate_method'
+[GEM_ROOT]/gems/actionpack-2.3.2/lib/action_controller/filters.rb:184:in `c=
+all'
+[GEM_ROOT]/gems/actionpack-2.3.2/lib/action_controller/filters.rb:635:in `r=
+un_before_filters'
+[GEM_ROOT]/gems/actionpack-2.3.2/lib/action_controller/filters.rb:615:in `c=
+all_filters'
+[GEM_ROOT]/gems/actionpack-2.3.2/lib/action_controller/filters.rb:638:in `r=
+un_before_filters'
+[GEM_ROOT]/gems/actionpack-2.3.2/lib/action_controller/filters.rb:206:in `c=
+all'
+[GEM_ROOT]/gems/actionpack-2.3.2/lib/action_controller/filters.rb:206:in `a=
+round_proc'
+[GEM_ROOT]/gems/activesupport-2.3.2/lib/active_support/callbacks.rb:182:in =
+`call'
+[GEM_ROOT]/gems/activesupport-2.3.2/lib/active_support/callbacks.rb:182:in =
+`evaluate_method'
+[GEM_ROOT]/gems/actionpack-2.3.2/lib/action_controller/filters.rb:184:in `c=
+all'
+[GEM_ROOT]/gems/actionpack-2.3.2/lib/action_controller/filters.rb:635:in `r=
+un_before_filters'
+[GEM_ROOT]/gems/actionpack-2.3.2/lib/action_controller/filters.rb:615:in `c=
+all_filters'
+[GEM_ROOT]/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `p=
+erform_action_without_benchmark'
+[GEM_ROOT]/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:i=
+n `perform_action_without_rescue'
+[GEM_ROOT]/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:i=
+n `perform_action_without_rescue'
+[GEM_ROOT]/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `pe=
+rform_action_without_flash'
+[GEM_ROOT]/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `per=
+form_action'
+[GEM_ROOT]/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+[GEM_ROOT]/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `proc=
+ess_without_filters'
+[GEM_ROOT]/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `p=
+rocess'
+[GEM_ROOT]/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `proc=
+ess'
+[GEM_ROOT]/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+[GEM_ROOT]/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb=
+:433:in `call'
+[GEM_ROOT]/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in =
+`dispatch'
+[GEM_ROOT]/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in=
+ `_call'
+[GEM_ROOT]/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in =
+`initialize'
+[GEM_ROOT]/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:=
+in `call'
+[GEM_ROOT]/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:=
+25:in `call'
+[GEM_ROOT]/gems/actionpack-2.3.2/lib/action_controller/session/abstract_sto=
+re.rb:122:in `call'
+[GEM_ROOT]/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `=
+call'
+[GEM_ROOT]/gems/activerecord-2.3.2/lib/active_record/connection_adapters/ab=
+stract/query_cache.rb:34:in `cache'
+[GEM_ROOT]/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `c=
+ache'
+[GEM_ROOT]/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `=
+call'
+[GEM_ROOT]/gems/activerecord-2.3.2/lib/active_record/connection_adapters/ab=
+stract/connection_pool.rb:361:in `call'
+[GEM_ROOT]/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `c=
+all'
+[GEM_ROOT]/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in=
+ `call'
+[GEM_ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/rack/request_handler.=
+rb:91:in `process_request'
+[GEM_ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/abstract_request_hand=
+ler.rb:206:in `main_loop'
+[GEM_ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/railz/application_spa=
+wner.rb:376:in `start_request_handler'
+[GEM_ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/railz/application_spa=
+wner.rb:334:in `handle_spawn_application'
+[GEM_ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/utils.rb:182:in `safe=
+_fork'
+[GEM_ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/railz/application_spa=
+wner.rb:332:in `handle_spawn_application'
+[GEM_ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/abstract_server.rb:35=
+1:in `__send__'
+[GEM_ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/abstract_server.rb:35=
+1:in `main_loop'
+[GEM_ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/abstract_server.rb:19=
+5:in `start_synchronously'
+[GEM_ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/abstract_server.rb:16=
+2:in `start'
+[GEM_ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/railz/application_spa=
+wner.rb:213:in `start'
+[GEM_ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/spawn_manager.rb:261:=
+in `spawn_rails_application'
+[GEM_ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/abstract_server_colle=
+ction.rb:126:in `lookup_or_add'
+[GEM_ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/spawn_manager.rb:255:=
+in `spawn_rails_application'
+[GEM_ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/abstract_server_colle=
+ction.rb:80:in `synchronize'
+[GEM_ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/abstract_server_colle=
+ction.rb:79:in `synchronize'
+[GEM_ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/spawn_manager.rb:254:=
+in `spawn_rails_application'
+[GEM_ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/spawn_manager.rb:153:=
+in `spawn_application'
+[GEM_ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/spawn_manager.rb:286:=
+in `handle_spawn_application'
+[GEM_ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/abstract_server.rb:35=
+1:in `__send__'
+[GEM_ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/abstract_server.rb:35=
+1:in `main_loop'
+[GEM_ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/abstract_server.rb:19=
+5:in `start_synchronously'
+
+
+--mimepart_4ca11b0266d76_4e53..fdb3b4f7e49527
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: Quoted-printable
+Content-Disposition: inline
+
+<html>
+  <head></head>
+
+  <body bgcolor=3D"#ffffff" link=3D"#66bb0c" alink=3D"#66bb0c" vlink=3D"#66=
+bb0c" style=3D"background-color: #ffffff; text-align: left;">
+    <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+=20=20
+    <tr>
+      <td valign=3D"top" style=3D"padding: 10px 20px 10px 20px; font-family=
+: Helvetica, Arial, sans-serif; font-size: 14px; background-color: #ffff99;=
+ text-align: left;">
+
+        <div style=3D"line-height: 1.3em;">
+          <p style=3D"margin: 0;">You are currently using an old version of=
+ the Hoptoad Notifier: 2.2.2.</p>
+          <p style=3D"margin: 0;">
+            <a href=3D"http://github.com/thoughtbot/hoptoad_notifier" style=
+=3D"font-weight: bold;">
+              Please upgrade to the latest notifier version: 2.3.7.
+            </a>
+          </p>
+        </div>
+      </td>
+    </tr>
+=20=20
+
+  <tr>
+    <td style=3D"padding: 10px 20px 10px 20px; font-family: Helvetica, Aria=
+l, sans-serif; font-size: 14px; background-color: #ffffff; text-align: left=
+; border-bottom: 1px solid #dddddd;" colspan=3D"2">
+      <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+        <tr>
+          <td style=3D"padding: 0 0 5px 0; font-weight: normal; color: #999=
+999;text-align: left; font-size: 14px; font-family: Helvetica, Arial, sans-=
+serif;"
+              width=3D"75"
+              valign=3D"top">Project:</td>
+          <td style=3D"padding: 0 0 5px 10px; font-size: 14px; font-weight:=
+ normal; text-align: left; font-family: Helvetica, Arial, sans-serif;"
+            valign=3D"top">
+            <a href=3D"http://foraker.hoptoadapp.com/projects/8396" style=
+=3D"color: #000">
+              TCI
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td style=3D"padding: 0 0 5px 0; font-weight: normal; color: #999=
+999; text-align: left; font-size: 14px; font-family: Helvetica, Arial, sans=
+-serif;"
+              width=3D"75"
+              valign=3D"top">Environment:</td>
+          <td style=3D"padding: 0 0 5px 10px; font-size: 14px; color: #0000=
+00; text-align: left; font-family: Helvetica, Arial, sans-serif;"
+              valign=3D"top">
+            <a href=3D"http://foraker.hoptoadapp.com/projects/8396/environm=
+ents/dev_qa/errors" style=3D"color: #000">
+              Dev qa
+            </a>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <tr>
+    <td style=3D"padding-top: 0; padding-bottom: 10px; text-align: left;">
+      <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=3D"left=
+">
+        <tr>
+          <td valign=3D"top" style=3D"padding: 10px 20px 10px 20px; font-fa=
+mily: Helvetica, Arial, sans-serif; font-size: 14px; background-color: #fff=
+fff; text-align: left;">
+            <div style=3D"line-height: 1.3em;">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+
+                <p style=3D"margin-bottom: 2px;">An error has just occurred=
+. View full details at:</p>
+                <p style=3D"padding: 0 0 12px 0; margin: 0;">
+                  <a href=3D"http://foraker.hoptoadapp.com/errors/2387110" =
+style=3D"font-weight: bold;">
+                    http://foraker.hoptoadapp.com/errors/2387110
+                  </a>
+                </p>
+
+                <p style=3D"color: #999999; margin-bottom: 2px;">Error Mess=
+age:</p>
+                <p style=3D"margin-top: 0;">RuntimeError: here3</p>
+
+                <p style=3D"color: #999999; padding: 10px 0 0 0; margin-bot=
+tom: 0px;">Where:</p>
+                                  <p style=3D"margin-top: 0; margin-bottom:=
+ 0; font-family: monospace;">student/multiple_choice_questions#check_answer=
+_flash_scale</p>
+                                <p style=3D"margin-top: 0; font-family: mon=
+ospace;">[PROJECT_ROOT]/app/controllers/student/multiple_choice_questions_c=
+ontroller.rb, line 100</p>
+                                  <p style=3D"color: #999999; padding: 10px=
+ 0 0 0; margin-bottom: 0px;">Backtrace Summary:</p>
+                                <p style=3D"margin-top: 0; margin-bottom: 0=
+; font-family: monospace;">[PROJECT_ROOT]/app/controllers/student/multiple_=
+choice_questions_controller.rb:100:in `check_answer_flash_scale'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `send'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `perform_=
+action_without_filters'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_f=
+ilters'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/actionpack-2.3.2/lib/action_controller/filters.rb:638:in `run_be=
+fore_filters'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/actionpack-2.3.2/lib/action_controller/filters.rb:206:in `call'<=
+/p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/actionpack-2.3.2/lib/action_controller/filters.rb:206:in `around=
+_proc'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/activesupport-2.3.2/lib/active_support/callbacks.rb:182:in `call=
+'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/activesupport-2.3.2/lib/active_support/callbacks.rb:182:in `eval=
+uate_method'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/actionpack-2.3.2/lib/action_controller/filters.rb:184:in `call'<=
+/p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/actionpack-2.3.2/lib/action_controller/filters.rb:635:in `run_be=
+fore_filters'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/actionpack-2.3.2/lib/action_controller/filters.rb:615:in `call_f=
+ilters'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/actionpack-2.3.2/lib/action_controller/filters.rb:638:in `run_be=
+fore_filters'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/actionpack-2.3.2/lib/action_controller/filters.rb:206:in `call'<=
+/p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/actionpack-2.3.2/lib/action_controller/filters.rb:206:in `around=
+_proc'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/activesupport-2.3.2/lib/active_support/callbacks.rb:182:in `call=
+'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/activesupport-2.3.2/lib/active_support/callbacks.rb:182:in `eval=
+uate_method'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/actionpack-2.3.2/lib/action_controller/filters.rb:184:in `call'<=
+/p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/actionpack-2.3.2/lib/action_controller/filters.rb:635:in `run_be=
+fore_filters'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/actionpack-2.3.2/lib/action_controller/filters.rb:615:in `call_f=
+ilters'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perfor=
+m_action_without_benchmark'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `pe=
+rform_action_without_rescue'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `pe=
+rform_action_without_rescue'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform=
+_action_without_flash'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_=
+action'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_w=
+ithout_filters'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `proces=
+s'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'<=
+/p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:=
+in `call'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `disp=
+atch'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_ca=
+ll'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `init=
+ialize'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `c=
+all'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in=
+ `call'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/actionpack-2.3.2/lib/action_controller/session/abstract_store.rb=
+:122:in `call'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'=
+</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstrac=
+t/query_cache.rb:34:in `cache'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'=
+</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'=
+</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstrac=
+t/connection_pool.rb:361:in `call'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'<=
+/p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `cal=
+l'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/rack/request_handler.rb:91=
+:in `process_request'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/abstract_request_handler.r=
+b:206:in `main_loop'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/railz/application_spawner.=
+rb:376:in `start_request_handler'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/railz/application_spawner.=
+rb:334:in `handle_spawn_application'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/utils.rb:182:in `safe_fork=
+'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/railz/application_spawner.=
+rb:332:in `handle_spawn_application'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/abstract_server.rb:351:in =
+`__send__'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/abstract_server.rb:351:in =
+`main_loop'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/abstract_server.rb:195:in =
+`start_synchronously'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/abstract_server.rb:162:in =
+`start'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/railz/application_spawner.=
+rb:213:in `start'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/spawn_manager.rb:261:in `s=
+pawn_rails_application'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/abstract_server_collection=
+.rb:126:in `lookup_or_add'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/spawn_manager.rb:255:in `s=
+pawn_rails_application'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/abstract_server_collection=
+.rb:80:in `synchronize'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/abstract_server_collection=
+.rb:79:in `synchronize'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/spawn_manager.rb:254:in `s=
+pawn_rails_application'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/spawn_manager.rb:153:in `s=
+pawn_application'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/spawn_manager.rb:286:in `h=
+andle_spawn_application'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/abstract_server.rb:351:in =
+`__send__'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/abstract_server.rb:351:in =
+`main_loop'</p>
+<p style=3D"margin-top: 0; margin-bottom: 0; font-family: monospace;">[GEM_=
+ROOT]/gems/passenger-2.2.4/lib/phusion_passenger/abstract_server.rb:195:in =
+`start_synchronously'</p>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+            </div>
+
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=3D"left" =
+width=3D"100%">
+      <tr>
+        <td style=3D"padding: 10px 20px 20px 20px; font-size: 11px; font-fa=
+mily: Helvetica, Arial, sans-serif; font-weight: bold; color: #666666; text=
+-align: left; border-top: 1px solid #dddddd;">
+          Delivered by <a href=3D"http://hoptoadapp.com/?source=3Demail" st=
+yle=3D"">Hoptoad</a>.
+        </td>
+      </tr>
+    </table>
+  </tr>
+</table>
+
+  </body>
+</html>
+
+--mimepart_4ca11b0266d76_4e53..fdb3b4f7e49527--

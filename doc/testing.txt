@@ -1,0 +1,6 @@
+bundle install
+
+# Don't need to modify the parameters in here, the file just needs to be present
+cp pivotal_config.yml.example pivotal_config.yml
+
+spec spec
